@@ -22,12 +22,12 @@ function checkNamespaceIssues($directory) {
     return $issues;
 }
 
-echo "🔍 فحص ملفات PHP للتحقق من مشاكل namespace...\n";
+echo " فحص ملفات PHP للتحقق من مشاكل namespace...\n";
 
 $issues = checkNamespaceIssues(_DIR_ . '/app');
 
 if (empty($issues)) {
-    echo "✅ جميع الملفات سليمة\n";
+    echo "  جميع الملفات سليمة\n";
 } else {
     echo "❌ تم العثور على مشاكل في الملفات التالية:\n";
     foreach ($issues as $issue) {
