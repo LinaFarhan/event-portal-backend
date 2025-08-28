@@ -29,7 +29,7 @@ $issues = checkNamespaceIssues(_DIR_ . '/app');
 if (empty($issues)) {
     echo "  جميع الملفات سليمة\n";
 } else {
-    echo "❌ تم العثور على مشاكل في الملفات التالية:\n";
+    echo "   تم العثور على مشاكل في الملفات التالية:\n";
     foreach ($issues as $issue) {
         echo " - $issue\n";
     }
